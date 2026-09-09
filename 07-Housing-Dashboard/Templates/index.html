@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Housing Scraper Dashboard</title>
+    <style>
+        body { font-family: 'Verdana', sans-serif; padding: 40px; background-color: #1a365d; color: #fffdd0; text-align: center; }
+        .card { background: rgba(255, 255, 255, 0.1); padding: 30px; border-radius: 8px; max-width: 600px; margin: auto; border: 1px solid #d2691e; }
+        h1 { color: #d2691e; }
+        ul { text-align: left; display: inline-block; }
+        li { margin-bottom: 10px; }
+    </style>
+    </head>
+    <body>
+        <div class="card">
+            <h1> Amsterdam Housing Bot</h1>
+            <h2>Total Properties Tracked: {{ total }}</h2>
+            <h3>Recorded Listing IDs:</h3>
+            <ul>
+                {% for house in houses %}
+                <li>House ID: {{ house.house_id }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </body>
+</html>
