@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Επικοινωνία - Η Τέχνη της Ζωγραφικής</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .contact-container {
+            max-width: 600px;
+            margin: 30px auto 50px auto;
+            padding: 30px;
+            background: rgba(255, 253, 208, 0.05);
+            border: 1px solid rgba(210, 105, 30, 0.3);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            color: rgb(210, 105, 30);
+            margin-bottom: 8px;
+            font-weight: bold;
+            font-family: 'Verdana', sans-serif;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid rgba(210, 105, 30, 0.2);
+            border-radius: 6px;
+            background-color: rgba(255, 253, 208, 0.9);
+            color: rgb(26, 54, 93);
+            font-size: 1em;
+        }
+
+        .submit-btn {
+            background-color: rgb(210, 105, 30);
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: bold;
+            width: 100%;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        .submit-btn:hover {
+            background-color: rgb(255, 253, 208);
+            color: rgb(210, 105, 30);
+            transform: translateY(-2px);
+        }
+
+        #success-message {
+            display: none;
+            color: rgb(255, 253, 208);
+            text-align: center;
+            margin-top: 20px;
+            font-weight: bold;
+            padding: 20px;
+            background: rgba(210, 105, 30, 0.2);
+            border-radius: 8px;
+            border: 1px solid rgb(210, 105, 30);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Αρχική</a></li>
+                <li><a href="movements.html">Καλλιτεχνικά Ρεύματα</a></li>
+                <li><a href="materials.html">Υλικά Ζωγραφικής</a></li>
+                <li><a href="contact.html">Επικοινωνία</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="fade-in-text" style="text-align: center;">
+        <h1
+            style="color:rgb(210, 105, 30); font-family:'Georgia', serif; font-weight: 900; margin-bottom: 40px; text-transform: uppercase; letter-spacing: 3px; font-size: 2.2em;">
+            Επικοινωνία
+        </h1>
+
+        <figure style="margin: 0 auto 40px auto; max-width: 600px;">
+            <img src="../images/contact.jpg" alt="Vincent van Gogh - Still Life"
+                style="width: 100%; border-radius: 8px; border: 1px solid rgba(210, 105, 30, 0.5); box-shadow: 0 15px 35px rgba(0,0,0,0.4);">
+            <figcaption class="art-caption" style="margin-top: 10px; font-size: 0.9em;">
+                <em>Vincent van Gogh, Still Life with Oranges and Lemons and Blue Gloves, 1889.</em>
+            </figcaption>
+        </figure>
+
+        <p
+            style="color: rgb(255, 253, 208); max-width: 600px; margin: 0 auto 30px auto; font-family: 'Verdana', sans-serif; line-height: 1.6;">
+            Έχετε ερωτήσεις για την τέχνη ή την ιστοσελίδα μας; <br>
+            Στείλτε μας το μήνυμά σας χρησιμοποιώντας την παρακάτω φόρμα.
+        </p>
+
+        <div class="contact-container">
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Ονοματεπώνυμο</label>
+                    <input type="text" id="name" required placeholder="Πληκτρολογήστε το όνομά σας">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required placeholder="π.χ. example@mail.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">Μήνυμα</label>
+                    <textarea id="message" rows="4" required placeholder="Πώς μπορούμε να σας βοηθήσουμε;"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Αποστολή</button>
+            </form>
+            <div id="success-message"></div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 - Η Τέχνη της Ζωγραφικής. Εργασία για το μάθημα CN4003.</p>
+        <p><strong>Σημείωση για τις Πηγές:</strong>
+            Το σύνολο των έργων τέχνης που παρουσιάζεται σε αυτή την ιστοσελίδα προέρχεται από την ψηφιακή συλλογή της
+            <a href="https://www.nga.gov" target="_blank" style="color: rgb(210, 105, 30);">National Gallery of Art
+                (Washington, D.C.)</a>.
+        </p>
+        <p>
+            Όλες οι εικόνες ανήκουν στην κατηγορία <strong>Public Domain</strong> και χρησιμοποιούνται σύμφωνα με την
+            πολιτική
+            <a href="https://www.nga.gov/open-access-at-nga.html" target="_blank" style="color: rgb(210, 105, 30);">Open
+                Access</a> του μουσείου.
+        </p>
+        <p>
+            Οι υπόλοιπες φωτογραφίες προέρχονται από την πλατφόρμα
+            <a href="https://unsplash.com" target="_blank" style="color: rgb(210, 105, 30);">Unsplash</a>.
+        </p>
+    </footer>
+    <script>
+        // Χρησιμοποιώ την εντολή .addEventListener(), ωστε να καταλαβαίνει η φόρμα ID όταν πατιέται το κουμπί υποβολής
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            // Χρησιμοποιώ αυτή την εντολή, ώστε να μην γίνεται refresh της σελίδας όταν παταει το κουμπί υποβολής και να δείχνει οτι στάλθηκε το μήνυμα
+            event.preventDefault();
+            // Αποθηκεύω το όνομα του χρήστη για να τα εμφανίσω το μήνυμα επιτυχης υποβολής μηνύματος
+            const name = document.getElementById('name').value;
+            const successDiv = document.getElementById('success-message');
+            // Κρύβω την φόρα (this) για να εμφανιστεί στην θέση του το μήνμα επιτυχούς υποβολής μηνύματος
+            this.style.display = 'none';
+
+            successDiv.style.display = 'block';
+            successDiv.innerHTML = "Ευχαριστούμε για την επικοινωνία, " + name + "! <br> Το μήνυμά σας στάλθηκε με επιτυχία.";
+        });
+    </script>
+</body>
+
+</html>
